@@ -8,11 +8,14 @@ const Navbar = () => {
     const NavItem = <>
      <li><Link to='/'>Home</Link></li>
         <li><Link>Task</Link></li>
+        {
+          user ? <> <li><Link to='/dashboard'>DashBoard</Link></li> </> :''
+        }
     
     </>
     return (
         <div>
-           <div className="navbar  fixed z-10 bg-white bg-opacity-40">
+           <div className="navbar  fixed z-10 bg-indigo-500 bg-opacity-40">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -34,9 +37,8 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-   {user ? <MenuDropDown/> : <>
-   <Link to='/login' className="btn btn-sm bg-indigo-500 text-white ">Login</Link>
-   </>}
+   {user ? <MenuDropDown/> :""
+  }
   </div>
 </div> 
         </div>

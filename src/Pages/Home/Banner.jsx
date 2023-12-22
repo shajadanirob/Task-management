@@ -19,7 +19,7 @@ const Banner = () => {
         <h1 className="mb-8 text-center text-xl font-bold text-white sm:text-xl md:mb-12 md:text-3xl">Experience the smooth flow of productivity. TaskFlow simplifies task management, making teamwork and project coordination a breeze.</h1>
 
         <div className="flex w-full flex-col gap-2.5 sm:flex-row sm:justify-center">
-          <Link href="#" className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Let’s Explore</Link>
+          <Link to='/login' className="inline-block rounded-lg bg-indigo-500 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-indigo-300 transition duration-100 hover:bg-indigo-600 focus-visible:ring active:bg-indigo-700 md:text-base">Let’s Explore</Link>
         </div>
       </div>
       
