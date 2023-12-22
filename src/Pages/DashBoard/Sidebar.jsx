@@ -9,6 +9,7 @@ import { AiOutlineBars } from 'react-icons/ai'
 import { CiHome } from "react-icons/ci";
 import { AiOutlineFundView } from "react-icons/ai";
 import { AiFillFolderAdd } from "react-icons/ai";
+import { AiOutlineUnorderedList } from "react-icons/ai";
 
 
 
@@ -82,9 +83,14 @@ const Sidebar = () => {
             address='dashboard/viewTask'
           />
             <MenuItem
-            icon={FcSettings}
-            label='Manage Task'
+            icon={AiOutlineUnorderedList}
+            label='Task Lists'
             address='dashboard/manageTask'
+          />
+            <MenuItem
+            icon={FcSettings}
+            label=' manageTask'
+            address='dashboard/TaskManage'
           />
     
             

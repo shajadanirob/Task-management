@@ -8,6 +8,8 @@ import PraivetRoute from "./Praivet";
 import CreareTask from "../../Pages/DashBoard/CreareTask";
 import ManageTask from "../../Pages/DashBoard/ManageTask";
 import ViewTask from "../../Pages/DashBoard/ViewTask";
+import TaskManage from "../../Pages/DashBoard/TaskManage";
+import Profile from "../../Pages/DashBoard/Profile";
 
 const router = createBrowserRouter([
   {
@@ -40,6 +42,13 @@ const router = createBrowserRouter([
     </PraivetRoute>,
     children:[
       {
+        path:'dashboard',
+        element: <PraivetRoute>
+          <Profile/>
+        </PraivetRoute>
+
+      },
+      {
       path:'dashboard/createTask',
       element: <PraivetRoute>
         <CreareTask/>
@@ -55,6 +64,12 @@ const router = createBrowserRouter([
       path:'dashboard/viewTask',
       element: <PraivetRoute>
         <ViewTask/>
+      </PraivetRoute>
+    },
+      {
+      path:'dashboard/TaskManage',
+      element: <PraivetRoute>
+        <TaskManage/>
       </PraivetRoute>
     },
   ]
