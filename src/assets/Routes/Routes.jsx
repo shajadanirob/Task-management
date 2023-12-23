@@ -10,6 +10,9 @@ import ManageTask from "../../Pages/DashBoard/ManageTask";
 import ViewTask from "../../Pages/DashBoard/ViewTask";
 import TaskManage from "../../Pages/DashBoard/TaskManage";
 import Profile from "../../Pages/DashBoard/Profile";
+import About from "../../Pages/About/About";
+import Contact from "../../Pages/Contact/Contact";
+import Task from "../../Pages/Task/Task";
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,22 @@ const router = createBrowserRouter([
         path: '/',
         element: <Home />
       },
+      {
+        path:'/about',
+        element: <About/>
+      },
+      {
+        path:'/contact',
+        element: <Contact/>
+      },
+      {
+        path:'/about',
+        element: <About/>
+      },
+      {
+        path:'/task',
+        element: <Task/>
+      }
      
     ]
   },

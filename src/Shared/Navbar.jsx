@@ -7,7 +7,10 @@ const Navbar = () => {
     const {user} = useAuth()
     const NavItem = <>
      <li><Link to='/'>Home</Link></li>
-        <li><Link>Task</Link></li>
+        <li><Link to='/task'>Task</Link></li>
+        <li><Link to='/about'>About</Link></li>
+        <li><Link to='/contact'>Contact</Link></li>
+      
         {
           user ? <> <li><Link to='/dashboard'>DashBoard</Link></li> </> :''
         }

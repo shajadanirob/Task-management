@@ -15,7 +15,7 @@ const ManageTask = () => {
   const [tasks, setTasks] = useState([]);
 
   useEffect(() => {
-    axios.get(`http://localhost:5000/allTask/${user?.email}`).then((res) => {
+    axios.get(`https://task-management-server-puce-chi.vercel.app/allTask/${user?.email}`).then((res) => {
       setTasks(res.data);
     });
   }, [user]);

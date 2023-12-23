@@ -7,7 +7,7 @@ import SingleTaskCard from "./SingleTaskCard";
 const ViewTask = () => {
     const {user} = useAuth()
     const [Tasks ,SetTasks] = useState([])
-    axios.get(`http://localhost:5000/allTask/${user?.email}`)
+    axios.get(`https://task-management-server-puce-chi.vercel.app/allTask/${user?.email}`)
     .then(res => {
         SetTasks(res.data)
 

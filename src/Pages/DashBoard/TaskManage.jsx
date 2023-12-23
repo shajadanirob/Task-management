@@ -7,14 +7,14 @@ import toast from "react-hot-toast";
 const TaskManage = () => {
     const {user} = useAuth()
     const [Tasks ,SetTasks] = useState([])
-    axios.get(`http://localhost:5000/allTask/${user?.email}`)
+    axios.get(`https://task-management-server-puce-chi.vercel.app/allTask/${user?.email}`)
     .then(res => {
         SetTasks(res.data)
 
     })
     const handleDelete = id => {
         console.log(id)
-        axios.delete(`http://localhost:5000/allTask/delete/${id}`)
+        axios.delete(`https://task-management-server-puce-chi.vercel.app/allTask/delete/${id}`)
         .then(res => {
             console.log(res.data)
             toast.success('your task delete succussFully')

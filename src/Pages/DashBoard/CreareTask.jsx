@@ -14,7 +14,7 @@ const CreareTask = () => {
         const TaskDescription = form.description.value;
         const AllData = {userName,userEmail,TaskName,TaskDescription}
         console.log(AllData)
-        axios.post('http://localhost:5000/allTask',AllData)
+        axios.post('https://task-management-server-puce-chi.vercel.app/allTask',AllData)
         .then(res => {
             console.log(res.data)
             toast.success('task add succesFully')
